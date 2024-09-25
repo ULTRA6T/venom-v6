@@ -8,7 +8,7 @@ import os
 from keep_alive import keep_alive
 keep_alive()
 # insert your Telegram bot token here
-bot = telebot.TeleBot('7465061881:AAHm6xW3QkScEpTFGnv_qEBBAqQkWNZ7weo')
+bot = telebot.TeleBot('7420207876:AAHEzpg8Uhb9ObUYU_jyZOHjRlcIjVsolJo')
 
 # Admin user IDs
 admin_id = ["5956579927"]
@@ -188,8 +188,7 @@ def remove_user(message):
         else:
             response = '''Please Specify A User ID to Remove. 
 ✅ Usage: /remove <userid>'''
-    else:
-        response = "You have not purchased yet purchase now from:- @venomXcrazy 🙇."
+    
 
     bot.reply_to(message, response)
 
@@ -319,8 +318,7 @@ def handle_bgmi(message):
                 bot.reply_to(message, response)  # Notify the user that the attack is finished
         else:
             response = "✅ Usage :- /bgmi <target> <port> <time>"  # Updated command syntax
-    else:
-        response = ("🚫 Unauthorized Access! 🚫\n\nOops! It seems like you don't have permission to use the /bgmi command. DM TO BUY ACCESS:- @venomXcrazy")
+
 
     bot.reply_to(message, response)
 
